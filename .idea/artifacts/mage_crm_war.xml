@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="mage_crm:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>shsxt_crm</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="shsxt_crm.war">
+      <element id="artifact" artifact-name="mage_crm:war exploded" />
+    </root>
+  </artifact>
+</component>
