@@ -8,6 +8,8 @@ import com.mage.crm.query.CustomerQuery;
 import com.mage.crm.service.CustomerService;
 import com.mage.crm.vo.Customer;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
@@ -95,5 +97,12 @@ public class CustomerController extends BaseController {
         }
         messageModel.setResult("客户信息删除成功");
         return messageModel;
+    }
+
+    @RequestMapping("openCustomerOtherInfo/{type}/{id}")
+    public String index(@PathVariable("type") String type, @PathVariable("id") Integer id, Model model) {
+        Customer customer = customerService.queryCustomerById(id);
+        model.addAttribute("customer", customer);
+        return "customer_order";
     }
 }

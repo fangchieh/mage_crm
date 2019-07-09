@@ -1,37 +1,47 @@
-D:\Program Files\Workspace\IdeaProjects\mage_crm\src\main\java\com\mage\crm\controller\UserController.java
-D:\Program Files\Workspace\IdeaProjects\mage_crm\src\main\java\com\mage\crm\dao\CustomerDao.java
-D:\Program Files\Workspace\IdeaProjects\mage_crm\src\main\java\com\mage\crm\service\DataDicService.java
-D:\Program Files\Workspace\IdeaProjects\mage_crm\src\main\java\com\mage\crm\base\exceptions\ParamsException.java
-D:\Program Files\Workspace\IdeaProjects\mage_crm\src\main\java\com\mage\crm\base\BaseController.java
-D:\Program Files\Workspace\IdeaProjects\mage_crm\src\main\java\com\mage\crm\model\MessageModel.java
-D:\Program Files\Workspace\IdeaProjects\mage_crm\src\main\java\com\mage\crm\query\CusDevPlanQuery.java
-D:\Program Files\Workspace\IdeaProjects\mage_crm\src\main\java\com\mage\crm\base\exceptions\GlobalExceptionResolver.java
-D:\Program Files\Workspace\IdeaProjects\mage_crm\src\main\java\com\mage\crm\base\BaseQuery.java
-D:\Program Files\Workspace\IdeaProjects\mage_crm\src\main\java\com\mage\crm\util\CookieUtil.java
-D:\Program Files\Workspace\IdeaProjects\mage_crm\src\main\java\com\mage\crm\dao\DataDicDao.java
-D:\Program Files\Workspace\IdeaProjects\mage_crm\src\main\java\com\mage\crm\controller\CustomerDevPlanController.java
-D:\Program Files\Workspace\IdeaProjects\mage_crm\src\main\java\com\mage\crm\query\CustomerQuery.java
-D:\Program Files\Workspace\IdeaProjects\mage_crm\src\main\java\com\mage\crm\vo\DataDic.java
-D:\Program Files\Workspace\IdeaProjects\mage_crm\src\main\java\com\mage\crm\service\UserService.java
-D:\Program Files\Workspace\IdeaProjects\mage_crm\src\main\java\com\mage\crm\vo\CustomerDevPlan.java
-D:\Program Files\Workspace\IdeaProjects\mage_crm\src\main\java\com\mage\crm\util\AssertUtil.java
-D:\Program Files\Workspace\IdeaProjects\mage_crm\src\main\java\com\mage\crm\util\UserLoginUtil.java
-D:\Program Files\Workspace\IdeaProjects\mage_crm\src\main\java\com\mage\crm\query\SaleChanceQuery.java
-D:\Program Files\Workspace\IdeaProjects\mage_crm\src\main\java\com\mage\crm\base\CrmConstant.java
-D:\Program Files\Workspace\IdeaProjects\mage_crm\src\main\java\com\mage\crm\util\Base64Util.java
-D:\Program Files\Workspace\IdeaProjects\mage_crm\src\main\java\com\mage\crm\vo\SaleChance.java
-D:\Program Files\Workspace\IdeaProjects\mage_crm\src\main\java\com\mage\crm\service\CustomerService.java
-D:\Program Files\Workspace\IdeaProjects\mage_crm\src\main\java\com\mage\crm\service\CustomerDevPlanService.java
-D:\Program Files\Workspace\IdeaProjects\mage_crm\src\main\java\com\mage\crm\model\UserModel.java
-D:\Program Files\Workspace\IdeaProjects\mage_crm\src\main\java\com\mage\crm\base\BaseVO.java
-D:\Program Files\Workspace\IdeaProjects\mage_crm\src\main\java\com\mage\crm\vo\User.java
-D:\Program Files\Workspace\IdeaProjects\mage_crm\src\main\java\com\mage\crm\controller\SaleChanceController.java
-D:\Program Files\Workspace\IdeaProjects\mage_crm\src\main\java\com\mage\crm\util\Md5Util.java
-D:\Program Files\Workspace\IdeaProjects\mage_crm\src\main\java\com\mage\crm\controller\DataDicController.java
-D:\Program Files\Workspace\IdeaProjects\mage_crm\src\main\java\com\mage\crm\dao\CustomerDevPlanDao.java
-D:\Program Files\Workspace\IdeaProjects\mage_crm\src\main\java\com\mage\crm\service\SaleChanceService.java
-D:\Program Files\Workspace\IdeaProjects\mage_crm\src\main\java\com\mage\crm\controller\IndexController.java
-D:\Program Files\Workspace\IdeaProjects\mage_crm\src\main\java\com\mage\crm\vo\Customer.java
-D:\Program Files\Workspace\IdeaProjects\mage_crm\src\main\java\com\mage\crm\dao\UserDao.java
-D:\Program Files\Workspace\IdeaProjects\mage_crm\src\main\java\com\mage\crm\controller\CustomerController.java
-D:\Program Files\Workspace\IdeaProjects\mage_crm\src\main\java\com\mage\crm\dao\SaleChanceDao.java
+C:\workspace\mage_crm\src\main\java\com\mage\crm\base\CrmConstant.java
+C:\workspace\mage_crm\src\main\java\com\mage\crm\query\CustomerOrderQuery.java
+C:\workspace\mage_crm\src\main\java\com\mage\crm\service\CustomerDevPlanService.java
+C:\workspace\mage_crm\src\main\java\com\mage\crm\base\exceptions\GlobalExceptionResolver.java
+C:\workspace\mage_crm\src\main\java\com\mage\crm\controller\CustomerOrderController.java
+C:\workspace\mage_crm\src\main\java\com\mage\crm\service\UserService.java
+C:\workspace\mage_crm\src\main\java\com\mage\crm\query\CusDevPlanQuery.java
+C:\workspace\mage_crm\src\main\java\com\mage\crm\vo\CustomerOrder.java
+C:\workspace\mage_crm\src\main\java\com\mage\crm\dao\DataDicDao.java
+C:\workspace\mage_crm\src\main\java\com\mage\crm\controller\IndexController.java
+C:\workspace\mage_crm\src\main\java\com\mage\crm\service\CustomerService.java
+C:\workspace\mage_crm\src\main\java\com\mage\crm\controller\SaleChanceController.java
+C:\workspace\mage_crm\src\main\java\com\mage\crm\dao\UserDao.java
+C:\workspace\mage_crm\src\main\java\com\mage\crm\vo\OrderDetails.java
+C:\workspace\mage_crm\src\main\java\com\mage\crm\base\exceptions\ParamsException.java
+C:\workspace\mage_crm\src\main\java\com\mage\crm\controller\CustomerDevPlanController.java
+C:\workspace\mage_crm\src\main\java\com\mage\crm\query\OrderDetailQuery.java
+C:\workspace\mage_crm\src\main\java\com\mage\crm\service\OrderDetailService.java
+C:\workspace\mage_crm\src\main\java\com\mage\crm\model\UserModel.java
+C:\workspace\mage_crm\src\main\java\com\mage\crm\dao\OrderDetailsDao.java
+C:\workspace\mage_crm\src\main\java\com\mage\crm\util\CookieUtil.java
+C:\workspace\mage_crm\src\main\java\com\mage\crm\base\BaseVO.java
+C:\workspace\mage_crm\src\main\java\com\mage\crm\vo\CustomerDevPlan.java
+C:\workspace\mage_crm\src\main\java\com\mage\crm\util\Base64Util.java
+C:\workspace\mage_crm\src\main\java\com\mage\crm\service\CustomerOrderService.java
+C:\workspace\mage_crm\src\main\java\com\mage\crm\util\Md5Util.java
+C:\workspace\mage_crm\src\main\java\com\mage\crm\controller\UserController.java
+C:\workspace\mage_crm\src\main\java\com\mage\crm\query\CustomerQuery.java
+C:\workspace\mage_crm\src\main\java\com\mage\crm\util\AssertUtil.java
+C:\workspace\mage_crm\src\main\java\com\mage\crm\vo\User.java
+C:\workspace\mage_crm\src\main\java\com\mage\crm\model\MessageModel.java
+C:\workspace\mage_crm\src\main\java\com\mage\crm\util\UserLoginUtil.java
+C:\workspace\mage_crm\src\main\java\com\mage\crm\dao\SaleChanceDao.java
+C:\workspace\mage_crm\src\main\java\com\mage\crm\vo\Customer.java
+C:\workspace\mage_crm\src\main\java\com\mage\crm\vo\DataDic.java
+C:\workspace\mage_crm\src\main\java\com\mage\crm\base\BaseQuery.java
+C:\workspace\mage_crm\src\main\java\com\mage\crm\controller\CustomerController.java
+C:\workspace\mage_crm\src\main\java\com\mage\crm\controller\DataDicController.java
+C:\workspace\mage_crm\src\main\java\com\mage\crm\service\SaleChanceService.java
+C:\workspace\mage_crm\src\main\java\com\mage\crm\dao\CustomerDao.java
+C:\workspace\mage_crm\src\main\java\com\mage\crm\vo\SaleChance.java
+C:\workspace\mage_crm\src\main\java\com\mage\crm\controller\OrderDetailController.java
+C:\workspace\mage_crm\src\main\java\com\mage\crm\base\BaseController.java
+C:\workspace\mage_crm\src\main\java\com\mage\crm\dao\CustomerDevPlanDao.java
+C:\workspace\mage_crm\src\main\java\com\mage\crm\dao\CustomerOrderDao.java
+C:\workspace\mage_crm\src\main\java\com\mage\crm\service\DataDicService.java
+C:\workspace\mage_crm\src\main\java\com\mage\crm\query\SaleChanceQuery.java

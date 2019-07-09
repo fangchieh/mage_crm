@@ -25,6 +25,10 @@ public class CustomerService {
         return customerDao.queryAllCustomers();
     }
 
+    public Customer queryCustomerById(Integer id) {
+        return customerDao.queryCustomerById(id);
+    }
+
     public Map<String, Object> queryCustomersByParams(CustomerQuery customerQuery) {
         PageHelper.startPage(customerQuery.getPage(), customerQuery.getRows());
         List<Customer> list = customerDao.queryCustomersByParams(customerQuery);

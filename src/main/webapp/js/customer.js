@@ -126,10 +126,24 @@ function deleteCustomer() {
     })
 }
 
-$(function () { //第二种解决方法: 使用dialog关闭事件,重置表单数据;
+$(function () { //使用dialog关闭事件,重置表单数据;
     $('#dlg').dialog({
         onClose: function () {
             $("#fm")[0].reset();
         }
     });
 });
+
+function openCustomerOtherInfo(title, type) {
+    var rows = $("#dg").datagrid("getSelections");
+    if (rows.length == 0) {
+        $.messager.alert("crm", "请先选中一个客户", "info");
+        return;
+    }
+    if (rows.length > 1) {
+        $.messager.alert("crm", "不能同时操作多个客户吧", "info");
+        return;
+    }
+
+    window.parent.openTab(title, ctx + "/customer/openCustomerOtherInfo/" + type + "/" + rows[0].id);
+}

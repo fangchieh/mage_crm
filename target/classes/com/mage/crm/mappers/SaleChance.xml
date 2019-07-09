@@ -35,7 +35,7 @@
             </if>
         </where>
     </select>
-    <delete id="delete" >
+    <delete id="delete">
         UPDATE t_sale_chance
         set is_valid=0
         where id IN

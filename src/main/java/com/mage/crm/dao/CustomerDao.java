@@ -12,6 +12,9 @@ public interface CustomerDao {
 
     public List<Customer> queryCustomersByParams(CustomerQuery customerQuery);
 
+    @Select("select * from t_customer where is_valid=1 and state=0 and id=#{id}")
+    public Customer queryCustomerById(Integer id);
+
     public Integer insert(Customer customer);
 
     public Integer update(Customer customer);
