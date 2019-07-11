@@ -11,8 +11,8 @@ public class CustomerTask {
     @Resource
     public CustomerService customerService;
 
-    //每天的12点12分0秒触发这个任务
-    @Scheduled(cron = "20 40 21 * * ?")
+    //每天的0点0分0秒触发这个任务
+    @Scheduled(cron = "0 0 0 * * ?")
     public void lossTask() {
         customerService.updateCustomerLossState();
         System.out.println("你好，我被触发了--");

@@ -1,6 +1,5 @@
 package com.mage.crm.vo;
 
-import com.fasterxml.jackson.annotation.JacksonInject;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.mage.crm.base.BaseVO;
 

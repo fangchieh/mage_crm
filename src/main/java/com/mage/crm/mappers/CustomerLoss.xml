@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.mage.crm.dao.CustomerLossDao">
+    <resultMap id="BaseResultMap" type="com.mage.crm.vo.CustomerLoss">
+        <id column="id" jdbcType="INTEGER" property="id"/>
+        <result column="cus_no" jdbcType="VARCHAR" property="orderNo"/>
+        <result column="cus_name" jdbcType="VARCHAR" property="cusName"/>
+        <result column="cus_manager" jdbcType="VARCHAR" property="cusManager"/>
+        <result column="last_order_time" jdbcType="TIMESTAMP" property="lastOrderTime"/>
+        <result column="confirm_loss_time" jdbcType="TIMESTAMP" property="confirmLossTime"/>
+        <result column="state" jdbcType="INTEGER" property="state"/>
+        <result column="loss_reason" jdbcType="VARCHAR" property="LossReson"/>
+        <result column="is_valid" jdbcType="INTEGER" property="isValid"/>
+        <result column="create_date" jdbcType="TIMESTAMP" property="createDate"/>
+        <result column="update_date" jdbcType="TIMESTAMP" property="updateDate"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+    id, cus_no as cusNo, cus_name as cusName, cus_manager as cusManager, last_order_time as lastOrderTime, confirm_loss_time as confirmLossTime,
+    state, loss_reason as lossReason, is_valid as isValid, create_date as createDate, update_date as updateDate
+  </sql>
+
+    <select id="queryCustomerLossesByParams" resultMap="BaseResultMap" parameterType="customerLossQuery">
+        SELECT
+        <include refid="Base_Column_List"/>
+        FROM t_customer_loss
+        <where>
+            is_valid = 1
+            <if test="customerManager != null and  customerManader != ''">
+                and cus_manager like concat('%',#{customerManager},'%')
+            </if>
+            <if test="customerNum != null and  customerNum != ''">
+                and cus_manager like concat('%',#{customerNum},'%')
+            </if>
+            <if test="customerName != null and  customerName != ''">
+                and cus_manager like concat('%',#{customerName},'%')
+            </if>
+            <if test="time != null and  time != ''">
+                <![CDATA[
+                    and create_date <= #{time}
+                    ]]>
+            </if>
+
+
+        </where>
+    </select>
+</mapper>
