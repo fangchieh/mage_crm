@@ -145,4 +145,21 @@
             #{item}
         </foreach>
     </delete>
+    <insert id="insertBatch" parameterType="list">
+        insert into t_customer_loss(cus_no,cus_name,cus_manager,last_order_time,state,is_valid, create_date,update_date
+        ) values
+        <foreach collection="list" item="item" separator=",">(
+            #{item.cusNo},#{item.cusName},#{item.cusManager},#{item.lastOrderTime},
+            #{item.state},#{item.isValid},#{item.createDate} ,#{item.updateDate} )
+        </foreach>
+    </insert>
+    <select id="queryCustomerLoss" resultType="customerLoss"> <![CDATA[
+
+                 SELECT khno as cusNo,name as cusName,cus_manager as cusManager ,o.order_date as lastOrderTime
+                 FROM t_customer c
+                 left JOIN t_customer_order o on c.id = o.cus_id
+                 WHERE DATE_ADD(c.create_date, INTERVAL 6 MONTH) < NOW() and c.is_valid = 1 and c.state = 0 AND c.id not in ( SELECT DISTINCT o.cus_id FROM t_customer_order o LEFT JOIN t_customer c ON c.id = o.cus_id WHERE DATE_ADD(o.order_date, INTERVAL 6 MONTH) > NOW() )
+
+        ]]>
+    </select>
 </mapper>

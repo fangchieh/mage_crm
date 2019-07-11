@@ -6,15 +6,13 @@ import com.mage.crm.dao.CustomerDao;
 import com.mage.crm.query.CustomerQuery;
 import com.mage.crm.util.AssertUtil;
 import com.mage.crm.vo.Customer;
+import com.mage.crm.vo.CustomerLoss;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
 import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 @Service
 public class CustomerService {
@@ -74,5 +72,20 @@ public class CustomerService {
     public void delete(Integer[] ids) {
         AssertUtil.isTrue(customerDao.delete(ids) < 1, "客户信息删除失败");
     }
+
+    public void updateCustomerLossState() {
+        List<CustomerLoss> list = customerDao.queryCustomerLoss();
+        if (list != null && list.size() > 0) {
+            for (int i = 0; i < list.size(); i++) {
+                CustomerLoss customerLoss = list.get(i);
+                customerLoss.setState(0);
+                customerLoss.setIsValid(1);
+                customerLoss.setCreateDate(new Date());
+                customerLoss.setUpdateDate(new Date());
+            }
+        }
+        AssertUtil.isTrue(customerDao.insertBatch(list) < 1, "客户流失数据添加失败");
+    }
+
 }
 

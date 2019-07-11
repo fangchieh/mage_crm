@@ -2,6 +2,7 @@ package com.mage.crm.dao;
 
 import com.mage.crm.query.CustomerQuery;
 import com.mage.crm.vo.Customer;
+import com.mage.crm.vo.CustomerLoss;
 import org.apache.ibatis.annotations.Select;
 
 import java.util.List;
@@ -20,4 +21,8 @@ public interface CustomerDao {
     public Integer update(Customer customer);
 
     public Integer delete(Integer[] ids);
+
+    public List<CustomerLoss> queryCustomerLoss();
+
+    public Integer insertBatch(List<CustomerLoss> list);
 }
